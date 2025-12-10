@@ -1,0 +1,6 @@
+framework module OceanaCustomerWebVoiceVideo {
+  umbrella header "OceanaCustomerWebVoiceVideo.h"
+
+  export *
+  module * { export * }
+}
