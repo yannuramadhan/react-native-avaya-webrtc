@@ -19,14 +19,4 @@ public class MyCustomReactPackage implements ReactPackage {
         );
     }
 
-    @NonNull
-    @Override
-    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        // UBAH BARIS INI
-        return Arrays.<ViewManager>asList(
-            new VideoViewManager(),
-            new CameraViewManager()
-        );
-    }
-
 }
