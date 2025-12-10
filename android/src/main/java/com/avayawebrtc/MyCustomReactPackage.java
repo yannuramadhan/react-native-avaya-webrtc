@@ -19,4 +19,10 @@ public class MyCustomReactPackage implements ReactPackage {
         );
     }
 
+    @NonNull
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Collections.emptyList();
+    }
+
 }
