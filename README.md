@@ -86,47 +86,6 @@ Avaya Aura Elite / Oceana
 
 ---
 
-## 🧪 Contoh Penggunaan
-
-```js
-import { NativeModules } from 'react-native';
-
-const { CustomModule } = NativeModules;
-
-async function startCallFlow(phoneNumber, config) {
-  const tokenResponse = await CustomModule.requestTokenFromServer(
-    config.use,
-    phoneNumber,
-    config.callingNumber,
-    config.display_name,
-    config.expiration
-  );
-
-  const configWithToken = {
-    ...config,
-    token: tokenResponse.encryptedToken,
-  };
-
-  await CustomModule.setOcsConfig(JSON.stringify(configWithToken));
-  await CustomModule.startAudioCall(phoneNumber);
-}
-```
-
----
-
-## 📚 API
-
-### requestTokenFromServer
-Request token ke Token Generation Service.
-
-### setOcsConfig
-Set konfigurasi OCS / WebGateway dan inisialisasi SDK Avaya.
-
-### startAudioCall
-Memulai panggilan audio ke destination.
-
----
-
 ## 📄 Lisensi
 
 Internal / Private SDK  
