@@ -96,7 +96,7 @@ RCT_EXPORT_METHOD(requestTokenFromServer:(NSString *)use
     @"use": use ?: @"",
     @"phoneNumber": phoneNumber ?: @"",
     @"callingNumber": callingNumber ?: @"",
-    @"display_name": displayName ?: @"",
+    @"displayName": displayName ?: @"",
     @"expiration": expiration ?: @""
   };
 
